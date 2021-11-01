@@ -1,6 +1,14 @@
 {
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "main": "node main.js"
+  },
   "dependencies": {
     "axios": "^0.24.0",
     "cheerio": "^1.0.0-rc.10"
+  },
+  "devDependencies": {
+    "jest": "^27.3.1"
   }
 }
