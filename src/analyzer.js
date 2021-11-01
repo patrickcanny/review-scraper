@@ -4,7 +4,7 @@ import Sentiment from 'sentiment'
  * @const numberOfReviewsToShow - the number of reviews to return. These are the n
  * best reviews as scored by the analyzer.
  */
-const numberOfReviewsToShow = 3
+export const numberOfReviewsToShow = 3
 
 /**
  * Analyze a list of review objects and determine which are the top 3 most positive reviews

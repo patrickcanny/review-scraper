@@ -13,8 +13,8 @@ describe('scrape', () => {
     result = await scrape()
   })
 
-  it('should log 5 statuses', () => {
-    expect(global.console.log).toHaveBeenCalledTimes(5)
+  it('should log 1 startup log and 5 statuses', () => {
+    expect(global.console.log).toHaveBeenCalledTimes(6)
   })
 
   it('should call console.log with correct status', () => {
