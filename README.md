@@ -33,3 +33,9 @@ For reference, the library I decided to use is called [sentiment](https://www.np
 This approach does have some drawbacks:
 - A "highly positive" review seems to be biased towards the number of AFINN words that are in the sentence. It is possible that some positive reviews would have few AFINN words.
 - It currently does not take into account the actual review ratings that the reviewer gave the dealer (i.e. "5 stars"). I have included this data in the logs for reference, and it potentially could be used to further refine the results.
+
+## Areas for improvement/future work
+There are a few places where this code could be improved:
+- Adding some kind of linting/formatting tool (i.e. ESLint) for consistent coding standards
+- I could not find a good way to mock cheerio in my unit tests, so in order to test the processor I had to actually run the scraper code in the unit test, which makes that particular test less like a unit test and more like an integration test
+- There are additional elements on the page that could be scraped to gather more data. There are reviews for individual aspects of the dealerships, and those review scores could be used to find which reviews are most positive. Additionally, it may be possible to affiliate specific employees with positive reviews to further refine the positivity score.
