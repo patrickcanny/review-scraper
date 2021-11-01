@@ -1,0 +1,1 @@
+export const analyze = (reviews) => { console.log(reviews) }
