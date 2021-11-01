@@ -67,5 +67,6 @@ export const extractRating = (element) => {
     return ratingMap[ratingString] || 0
   } catch (e) {
     console.log('There was an error processing this element', element, e)
+    return 0
   }
 }
