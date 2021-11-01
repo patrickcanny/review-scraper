@@ -4,8 +4,8 @@
 import cheerio from 'cheerio'
 
 /**
- * @const ratingMap - a mapping of rating classnames to actual
- * rating integers.
+ * @const ratingMap - a mapping of rating classnames on dealerrater.com 
+ * to actual rating integers.
  */
 const ratingMap = {
   'rating-00': 0,

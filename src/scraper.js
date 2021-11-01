@@ -48,7 +48,7 @@ export const scrape = async () => {
       $(reviewSelector).each((i, review) => reviews.push(review))
     }
   } catch (e) {
-    console.log('THERE WAS AN ERROR!!!!', e)
+    console.log('The scraper encountered an error!', e)
   }
   return reviews
 }
