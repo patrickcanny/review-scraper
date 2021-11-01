@@ -34,6 +34,7 @@ const ratingMap = {
  * } 
  */
 export const process = (reviews) => {
+  console.log('Processing Reviews...')
   let processedReviews = []
   reviews.map((review) => {
     const $ = cheerio.load(review)

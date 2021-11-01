@@ -10,6 +10,7 @@ This project runs on NodeJS (LTS version) and manages packages with npm. Both of
 This tool also makes use of the following libraries:
 - [axios](https://axios-http.com/): a simple, promise-based http client for node.js
 - [cheerio](https://cheerio.js.org/): a subset of jQuery implemented for server-based applications and commonly used in web scraping
+- [sentiment](https://www.npmjs.com/package/sentiment): NodeJS Sentiment Analysis tool for analyzing reviews for positivity
 - [jest](https://jestjs.io/): JavaScript unit testing framework
 
 # Running the project

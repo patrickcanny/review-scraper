@@ -32,6 +32,7 @@ const reviewSelector = '.review-entry'
  * @returns { Node[] } a list of DOM nodes that match the reviewSelector defined above (aka review divs)
  */
 export const scrape = async () => {
+  console.log(`Scraping ${numberOfPages} pages of reviews for McKaig Chevrolet Buick...`)
   let reviews = []
   try {
     for (let pageNo = 1; pageNo <= numberOfPages; pageNo++) {

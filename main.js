@@ -13,6 +13,12 @@ import { analyze } from './src/analyzer.js'
 
 const reviews = await scrape()
 const processedReviews = await process(reviews)
-// const results = await analyze(processedReviews)
+const results = await analyze(processedReviews)
 
-// results ? results.map((result) => console.log(result)) : console.log('There were no results!')
+results
+  ? results.map((result) => console.log({
+    text: result.text,
+    dealerStarRating: result.overallRating,
+    positivityScore: result.sentiment.score
+  }))
+  : console.log('There were no results!')
