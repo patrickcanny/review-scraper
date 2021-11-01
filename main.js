@@ -15,6 +15,14 @@ const reviews = await scrape()
 const processedReviews = await process(reviews)
 const results = await analyze(processedReviews)
 
+/**
+ * Output the results in a sensible format: 
+ * {
+ *    text: String - review text
+ *    dealerStarRating: Number - the number of stars given to the dealer by this review
+ *    positivityScore: Number - the result of sentiment analysis on the dealer score
+ * }
+ */
 results
   ? results.map((result) => console.log({
     text: result.text,
